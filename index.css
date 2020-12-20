@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid grey;*/
+}
+body{
+    width: 1500px;
+    height: 800px;
+    display: block;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.proyecto{
+    background: black;
+    color:white;
+    padding: 8px 8px;
+    display: block;
+    text-align: center;
+    
+}
+.cuerpo{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+section{
+    background-color: white;
+    color:black;
+    box-shadow: 1px 1px 5px 3px rgb(199, 199, 199);
+    width: 320px;
+    height: 400px;
+    flex-grow: 1;
+    margin: 8px;
+    padding: 25px;
+    border: 1px solid lightgray;
+    text-align: center;
+
+}
+
+body div input{
+    border: none;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    background-color: #616161;
+    padding: 6px 16px;
+    cursor: pointer;
+}
+h4{
+    font-size: 16px;
+}
+ h1{
+     font-size: 60px;
+     font-weight: 100;
+ }
+
+ .proyecto img{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    left: 10px
+ }
+
+ @media screen and (min-width:450px){
+     .cuerpo{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         width: 32%;
+         margin-top: 0;
+     }
+
+     .proyecto{
+         width: 32%;
+
+     }
+ }
+ @media screen and (min-width:900px){
+    .cuerpo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+        margin-top: 0;
+    }
+
+    .proyecto{
+        width: 60%;
+
+    }
+}
+@media screen and (min-width:1300px){
+    .cuerpo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .proyecto{
+        width: 100%;
+
+    }
+}
